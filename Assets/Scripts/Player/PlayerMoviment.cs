@@ -51,7 +51,7 @@ namespace PlatformGame{
         }
         void MovimentHandler(){
             float horizontalInput = Input.GetAxis("Horizontal");
-            Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+            Vector3 move = new Vector3(horizontalInput, 0, 0);
             if(isGrounded)
                 playerAnimator.SetMoviment(horizontalInput);
             RotationHandler(horizontalInput);
