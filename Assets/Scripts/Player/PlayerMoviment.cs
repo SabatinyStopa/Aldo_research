@@ -36,11 +36,15 @@ namespace PlatformGame{
         void JumpHandler(){
             isGrounded = Physics.CheckSphere(groundChecker.position, groundCheckRadius, groundMask);
 
+            playerAnimator.SetIsGrounded(isGrounded);
+
             if (isGrounded && playerVelocity.y < 0)
                 playerVelocity.y = 0f;
 
-            if (Input.GetButtonDown("Jump") && isGrounded)
+            if (Input.GetButtonDown("Jump") && isGrounded){
                 playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
+                playerAnimator.SetJump();
+            }
 
             playerVelocity.y += gravity * Time.deltaTime;
             characterController.Move(playerVelocity * Time.deltaTime);
@@ -48,7 +52,8 @@ namespace PlatformGame{
         void MovimentHandler(){
             float horizontalInput = Input.GetAxis("Horizontal");
             Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-            playerAnimator.SetMoviment(horizontalInput);        
+            if(isGrounded)
+                playerAnimator.SetMoviment(horizontalInput);
             RotationHandler(horizontalInput);
             characterController.Move(move * Time.deltaTime * speed);
         }
