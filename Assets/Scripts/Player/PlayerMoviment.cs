@@ -69,6 +69,9 @@ namespace PlatformGame{
         }
 
         void OnDrawGizmos(){
+            if(!enableGizmos)
+                return;
+
             Gizmos.color = gizmosColor;
             Gizmos.DrawWireSphere(groundChecker.position, groundCheckRadius);    
         }
