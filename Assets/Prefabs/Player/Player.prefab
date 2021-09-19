@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 1674455799011208659}
   - component: {fileID: 318905509}
   - component: {fileID: 8419386513397589723}
+  - component: {fileID: 4797352838464973748}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -283,7 +284,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal: Horizontal
   isGrounded: IsGrounded
+  isShooting: IsShooting
   jump: Jump
+  timeToSetShootingBack: 3
+--- !u!114 &4797352838464973748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147752367711628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dacc53b892f1b94fb916443920405de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointOfShoot: {fileID: 1676476170}
+  bulletPrefab: {fileID: 4858801103533003085, guid: 066e6cfc7d6854840a43aa41700392e6,
+    type: 3}
+  timeToShoot: 0.3
 --- !u!1 &1158021920011488
 GameObject:
   m_ObjectHideFlags: 0
