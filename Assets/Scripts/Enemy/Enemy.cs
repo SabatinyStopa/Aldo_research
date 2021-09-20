@@ -8,11 +8,17 @@ namespace PlatformGame{
         [SerializeField] Transform groundDetection;
         [SerializeField] LayerMask groundMask;
         [SerializeField] bool movingRight = true;
-         [Header("Gizmos")]
+        [Header("Gizmos")]
         [SerializeField] bool enableGizmos;
         [SerializeField] Color gizmosColor = Color.magenta;
+
         void Update(){
             Patrol();    
+        }
+
+        void OnTriggerEnter(Collider other){
+            // if(other.CompareTag("Player"))    
+                // Damage Player;
         }
         void Patrol(){
             transform.position += transform.forward * Time.deltaTime * speed;
@@ -27,6 +33,10 @@ namespace PlatformGame{
             }
                 
         }     
+
+        public void TakeDamage(float amount){
+
+        }
 
         void OnDrawGizmos(){
             if(!enableGizmos)
