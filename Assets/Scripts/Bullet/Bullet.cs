@@ -7,7 +7,8 @@ namespace PlatformGame{
         [SerializeField] float damage = 20f;
         void Update(){
             MovimentHandler();
-        }        
+        }
+        
         void OnCollisionEnter(Collision other){
             Health health = other.collider.GetComponent<Health>();
             
@@ -16,6 +17,7 @@ namespace PlatformGame{
 
             Destroy(gameObject);    
         }
+
         void OnBecameInvisible(){
             Destroy(gameObject);    
         }

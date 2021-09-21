@@ -1,12 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 namespace PlatformGame{
     public class Health : MonoBehaviour {
         [Header("Valor total de vida")]
         [SerializeField] float totalHealth = 100;
+        [Header("Imagem da vida")]
+        [SerializeField] Image healthImage;
         float currentLife;
 
-        void Start() {
-            currentLife = totalHealth;    
+        void Start(){
+            currentLife = totalHealth;
+            UpdateUi();    
         }
         public void TakeDamage(float amount){
             currentLife -= amount;
@@ -21,7 +26,7 @@ namespace PlatformGame{
         }
 
         void UpdateUi(){
-            
+            healthImage.fillAmount = currentLife / totalHealth;
         }
 
         void Die(){
