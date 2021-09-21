@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0d18b545d52f741aec9fe94094d0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   groundCheckRadius: 0.2
   groundDetection: {fileID: 2707062250233265313}
   groundMask:

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PlatformGame{
+namespace PlatformGame.Player{
     public class PlayerMoviment : MonoBehaviour{
         [Header("Velocidade")]
         [SerializeField] float speed;

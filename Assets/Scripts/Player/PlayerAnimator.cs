@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-namespace PlatformGame{
+namespace PlatformGame.Player{
     public class PlayerAnimator : MonoBehaviour {
         [Header("Parametros")]
         [SerializeField] string horizontal = "Horizontal";

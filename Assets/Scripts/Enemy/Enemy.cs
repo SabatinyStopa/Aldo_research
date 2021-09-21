@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace PlatformGame{
+namespace PlatformGame.Enemy{
     public class Enemy : MonoBehaviour{
         [Header("Velocidade")]
         [SerializeField] float speed;

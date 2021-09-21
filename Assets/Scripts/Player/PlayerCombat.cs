@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PlatformGame{
+namespace PlatformGame.Player{
     public class PlayerCombat : MonoBehaviour {
         [Header("Ponto de Tiro")]
         [SerializeField] Transform pointOfShoot;
