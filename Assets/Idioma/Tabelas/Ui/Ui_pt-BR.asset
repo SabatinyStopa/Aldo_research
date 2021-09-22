@@ -107,5 +107,9 @@ MonoBehaviour:
     m_Localized: Resultados
     m_Metadata:
       m_Items: []
+  - m_Id: 283287335206912
+    m_Localized: Jogue Novamente
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
