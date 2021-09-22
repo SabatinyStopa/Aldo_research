@@ -4,6 +4,7 @@ namespace PlatformGame{
         public static GameManager instance;
         public int commonCristalQuantity = 0;
         [HideInInspector] public bool hasMainCollectable;
+        [HideInInspector] public bool playerCantMove;
 
         void Awake(){
             if(!instance)

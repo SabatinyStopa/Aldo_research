@@ -15,6 +15,9 @@ namespace PlatformGame.Player{
         }
 
         void Update(){
+            if(GameManager.instance.playerCantMove)
+                return;
+                
             ShootHandler();
         }
 
