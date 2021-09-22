@@ -18,7 +18,7 @@ namespace PlatformGame.Enemy{
         }
 
         void OnTriggerEnter(Collider other){
-            if(other.CompareTag("Player"))    
+            if(other.CompareTag(Constants.PLAYER_TAG))    
                 other.GetComponent<Health>().TakeDamage(damage);
         }
         void Patrol(){
