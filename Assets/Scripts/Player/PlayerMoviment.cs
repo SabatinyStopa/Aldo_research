@@ -14,11 +14,14 @@ namespace PlatformGame.Player{
         [SerializeField] Transform groundChecker;
         [SerializeField] float groundCheckRadius = 0.2f;
         [SerializeField] LayerMask groundMask;
+        [Header("Particulas")]
+        [SerializeField] GameObject dustEffect;
         CharacterController characterController;
         float turnSmoothVelocity;
         Vector3 playerVelocity;
         bool isGrounded;
         bool canJump;
+        bool spawnDustEffect;
         PlayerAnimator playerAnimator;
         float horizontalInput;
         [Header("Modo debug")]
@@ -52,8 +55,17 @@ namespace PlatformGame.Player{
 
             playerAnimator.SetIsGrounded(isGrounded);
 
+            if(isGrounded){
+                if(spawnDustEffect){
+                    Instantiate(dustEffect, transform.position, Quaternion.identity);
+                    spawnDustEffect = false;
+                }
+            }else
+                spawnDustEffect = true;
+
             if (isGrounded && playerVelocity.y < 0)
                 playerVelocity.y = 0f;
+        
 
             if(debugMode)
                 canJump = Input.GetButton("Jump");

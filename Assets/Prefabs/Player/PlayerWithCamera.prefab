@@ -313,6 +313,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 881141284581174512}
     m_Modifications:
     - target: {fileID: 318905509, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
+      propertyPath: dustEffect
+      value: 
+      objectReference: {fileID: 3528932886302361086, guid: 4e6baad5d980e4546b39ce8c4d6df1c2,
+        type: 3}
+    - target: {fileID: 318905509, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
       propertyPath: jumpHeight
       value: 1.2
       objectReference: {fileID: 0}
