@@ -10392,7 +10392,7 @@ PrefabInstance:
     - target: {fileID: 1291614787072426394, guid: 7ef75eb01ee678d49a1e57807ebc99a1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.77
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1291614787072426394, guid: 7ef75eb01ee678d49a1e57807ebc99a1,
         type: 3}
@@ -10751,6 +10751,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pod
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091996099303289, guid: fbf6673c446d1c9428605580540021d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879145050983229749, guid: fbf6673c446d1c9428605580540021d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879734476851673211, guid: fbf6673c446d1c9428605580540021d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879748969876369165, guid: fbf6673c446d1c9428605580540021d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879804077884339815, guid: fbf6673c446d1c9428605580540021d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbf6673c446d1c9428605580540021d6, type: 3}

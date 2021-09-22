@@ -931,6 +931,8 @@ MonoBehaviour:
   totalHealth: 100
   healthImage: {fileID: 4221640167911093797}
   triggerHitName: TakeDamage
+  plasmaExplosionPrefab: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1,
+    type: 3}
 --- !u!1 &1914324128724412
 GameObject:
   m_ObjectHideFlags: 0
