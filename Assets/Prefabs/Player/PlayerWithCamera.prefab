@@ -407,6 +407,12 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 881141284753393799}
+    - target: {fileID: 4797352838464973748, guid: 2abf19653d633114faedf3b60dc6c39f,
+        type: 3}
+      propertyPath: shootLightPrefab
+      value: 
+      objectReference: {fileID: 1000011128802252, guid: 8f596355f47b1f54e82ef5c244359121,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 1947089374220497999, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}

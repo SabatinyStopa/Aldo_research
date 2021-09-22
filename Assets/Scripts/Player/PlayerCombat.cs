@@ -4,9 +4,12 @@ namespace PlatformGame.Player{
     public class PlayerCombat : MonoBehaviour {
         [Header("Ponto de Tiro")]
         [SerializeField] Transform pointOfShoot;
+        [Header("Munição")]
         [SerializeField] GameObject bulletPrefab;
         [Header("Tempo entre os disparos")]
         [SerializeField] float timeToShoot = 0.3f;
+        [Header("Particulas")]
+        [SerializeField] GameObject shootLightPrefab;
         float currentTimer;
         PlayerAnimator playerAnimator;
         bool canShoot;
@@ -41,6 +44,7 @@ namespace PlatformGame.Player{
         }
 
         void Shoot(){
+            Instantiate(shootLightPrefab, pointOfShoot.position, Quaternion.identity);
             Instantiate(bulletPrefab, pointOfShoot.position, pointOfShoot.transform.rotation);
         }
     }

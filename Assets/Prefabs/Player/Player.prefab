@@ -264,12 +264,13 @@ MonoBehaviour:
   gravity: -9.8
   jumpHeight: 3
   turnSmoothTime: 0.1
-  turnSmoothVelocity: 0
   groundChecker: {fileID: 4615201442555538642}
   groundCheckRadius: 0.2
   groundMask:
     serializedVersion: 2
     m_Bits: 256
+  dustEffect: {fileID: 1000011128802252, guid: 8f596355f47b1f54e82ef5c244359121, type: 3}
+  debugMode: 0
   enableGizmos: 1
   gizmosColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!114 &8419386513397589723
@@ -305,6 +306,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4858801103533003085, guid: 066e6cfc7d6854840a43aa41700392e6,
     type: 3}
   timeToShoot: 0.3
+  shootLightPrefab: {fileID: 0}
+  debugMode: 0
 --- !u!114 &1947089374220497999
 MonoBehaviour:
   m_ObjectHideFlags: 0
