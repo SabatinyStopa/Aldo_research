@@ -977,3 +977,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelCanvas: {fileID: 796288027}
+  timeText: {fileID: 1570591787}
+  cristalText: {fileID: 910331321}
