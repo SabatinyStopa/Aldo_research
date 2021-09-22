@@ -18,7 +18,11 @@ namespace PlatformGame.Player{
         float turnSmoothVelocity;
         Vector3 playerVelocity;
         bool isGrounded;
+        bool canJump;
         PlayerAnimator playerAnimator;
+        float horizontalInput;
+        [Header("Modo debug")]
+        [SerializeField] bool debugMode;
         [Header("Gizmos")]
         [SerializeField] bool enableGizmos;
         [SerializeField] Color gizmosColor = Color.blue;
@@ -35,6 +39,13 @@ namespace PlatformGame.Player{
             MovimentHandler();
             JumpHandler();
         }
+        public void SetHorizontalInput(float amount){
+            horizontalInput = amount;
+        }
+
+        public void SetCanJump(bool active){
+            canJump = active;
+        }
 
         void JumpHandler(){
             isGrounded = Physics.CheckSphere(groundChecker.position, groundCheckRadius, groundMask);
@@ -44,7 +55,10 @@ namespace PlatformGame.Player{
             if (isGrounded && playerVelocity.y < 0)
                 playerVelocity.y = 0f;
 
-            if (Input.GetButtonDown("Jump") && isGrounded){
+            if(debugMode)
+                canJump = Input.GetButton("Jump");
+
+            if (canJump && isGrounded){
                 playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
                 playerAnimator.SetJump();
             }
@@ -52,8 +66,11 @@ namespace PlatformGame.Player{
             playerVelocity.y += gravity * Time.deltaTime;
             characterController.Move(playerVelocity * Time.deltaTime);
         }
+
         void MovimentHandler(){
-            float horizontalInput = Input.GetAxis("Horizontal");
+            if(debugMode)
+                horizontalInput = Input.GetAxis("Horizontal");
+
             Vector3 move = new Vector3(horizontalInput, 0, 0);
             if(isGrounded)
                 playerAnimator.SetMoviment(horizontalInput);

@@ -9,6 +9,9 @@ namespace PlatformGame.Player{
         [SerializeField] float timeToShoot = 0.3f;
         float currentTimer;
         PlayerAnimator playerAnimator;
+        bool canShoot;
+        [Header("Modo debug")]
+        [SerializeField] bool debugMode;
 
         void Start() {
             playerAnimator = GetComponent<PlayerAnimator>();    
@@ -21,8 +24,15 @@ namespace PlatformGame.Player{
             ShootHandler();
         }
 
+        public void SetCanShoot(bool active){
+            canShoot = active;
+        }
+
         void ShootHandler(){
-            if(Input.GetKeyDown(KeyCode.E) && currentTimer >= timeToShoot){
+            if(debugMode)
+                canShoot = Input.GetKeyDown(KeyCode.E);
+    
+            if(canShoot && currentTimer >= timeToShoot){
                 currentTimer = 0;
                 Shoot();
                 playerAnimator.SetIsShooting(true);
