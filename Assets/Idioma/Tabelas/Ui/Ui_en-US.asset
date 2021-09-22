@@ -94,5 +94,17 @@ MonoBehaviour:
     m_Localized: Tap To Advance
     m_Metadata:
       m_Items: []
+  - m_Id: 81193105883136
+    m_Localized: 'Cristals:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81242099548160
+    m_Localized: 'Time:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81305018302464
+    m_Localized: Results
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

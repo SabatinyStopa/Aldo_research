@@ -95,5 +95,17 @@ MonoBehaviour:
     m_Localized: "Aperte para avan\xE7ar"
     m_Metadata:
       m_Items: []
+  - m_Id: 81193105883136
+    m_Localized: 'Cristais:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81242099548160
+    m_Localized: 'Tempo:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81305018302464
+    m_Localized: Resultados
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

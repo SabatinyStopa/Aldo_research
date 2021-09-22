@@ -91,6 +91,18 @@ MonoBehaviour:
     m_Key: Tap To Advance
     m_Metadata:
       m_Items: []
+  - m_Id: 81193105883136
+    m_Key: 'Cristals:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81242099548160
+    m_Key: 'Time:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81305018302464
+    m_Key: Results
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
