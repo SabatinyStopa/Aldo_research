@@ -9,12 +9,12 @@ namespace PlatformGame{
         }
 
         void Collect(){
-            if(collecatableKind == CollecatableKind.MainCristal){
+            if(collecatableKind == CollecatableKind.MainCristal)
                 GameManager.instance.hasMainCollectable = true;
-                Destroy(gameObject);
-            }
             else
                 GameManager.instance.SumCommonCristals();
+
+            Destroy(gameObject);
         }
     }
 }
