@@ -305,18 +305,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2745388322390424476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882250929323315697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db4dde4f1e4a1c546b8f77ae334f0ba1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &881141284058297469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,14 +360,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1674455799011208659, guid: 2abf19653d633114faedf3b60dc6c39f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913381166033437632, guid: 2abf19653d633114faedf3b60dc6c39f,
+        type: 3}
+      propertyPath: m_Name
+      value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208695944813112487, guid: 2abf19653d633114faedf3b60dc6c39f,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 881141284753393799}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
---- !u!1 &882250929323315697 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1147752367711628, guid: 2abf19653d633114faedf3b60dc6c39f,
-    type: 3}
-  m_PrefabInstance: {fileID: 881141284058297469}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &879709427425657359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4268597916284530, guid: 2abf19653d633114faedf3b60dc6c39f,
