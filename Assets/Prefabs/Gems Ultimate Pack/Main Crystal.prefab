@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 23000012859278624}
   - component: {fileID: 5946390621401926657}
   - component: {fileID: 8123743719638504064}
+  - component: {fileID: 4438757132630427386}
   m_Layer: 0
-  m_Name: Diamondo
+  m_Name: Main Crystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,3 +108,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collecatableKind: 1
+--- !u!114 &4438757132630427386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013931470818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd32707e63793994fb28ab134ba32463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upAndDownSpeed: 5
