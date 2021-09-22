@@ -10,10 +10,14 @@ namespace PlatformGame{
         float currentLife;
 
         void Start(){
-            currentLife = totalHealth;
-            UpdateUi();    
+            SetToTotalLife(); 
         }
-        public void TakeDamage(float amount){
+
+        public void SetToTotalLife(){
+            currentLife = totalHealth;
+            UpdateUi();
+        }
+        public virtual void TakeDamage(float amount){
             currentLife -= amount;
 
             if(currentLife <= 0)
@@ -29,9 +33,8 @@ namespace PlatformGame{
             healthImage.fillAmount = currentLife / totalHealth;
         }
 
-        void Die(){
-            if(gameObject.CompareTag(Constants.PLAYER_TAG))
-                GameManager.instance.PlayerDied();
+        public virtual void Die(){
+            Destroy(gameObject);
         }
     }
 }

@@ -823,9 +823,9 @@ GameObject:
   - component: {fileID: 512997318}
   - component: {fileID: 512997319}
   - component: {fileID: 5406497916348207123}
-  - component: {fileID: 5204781253951962222}
+  - component: {fileID: 8700702488671471948}
   m_Layer: 0
-  m_Name: TurtleShell
+  m_Name: Main Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,7 +916,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 1, z: 0.8}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &5204781253951962222
+--- !u!114 &8700702488671471948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -925,11 +925,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1837317425425208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aca5bff462ba4b74492c7ba4dbc003ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 12c39c02c420b1d41bc2927f7e9a52f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   totalHealth: 100
   healthImage: {fileID: 4221640167911093797}
+  triggerHitName: TakeDamage
 --- !u!1 &1914324128724412
 GameObject:
   m_ObjectHideFlags: 0
