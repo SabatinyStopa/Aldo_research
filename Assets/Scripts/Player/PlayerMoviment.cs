@@ -20,7 +20,6 @@ namespace PlatformGame.Player{
         float turnSmoothVelocity;
         Vector3 playerVelocity;
         bool isGrounded;
-        bool canJump;
         bool spawnDustEffect;
         PlayerAnimator playerAnimator;
         float horizontalInput;
@@ -46,8 +45,11 @@ namespace PlatformGame.Player{
             horizontalInput = amount;
         }
 
-        public void SetCanJump(bool active){
-            canJump = active;
+        public void Jump(){
+            if(!isGrounded)
+                return;
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
+            playerAnimator.SetJump();
         }
 
         void JumpHandler(){
@@ -65,15 +67,9 @@ namespace PlatformGame.Player{
 
             if (isGrounded && playerVelocity.y < 0)
                 playerVelocity.y = 0f;
-        
 
-            if(debugMode)
-                canJump = Input.GetButton("Jump");
-
-            if (canJump && isGrounded){
-                playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
-                playerAnimator.SetJump();
-            }
+            if (debugMode && Input.GetButton("Jump"))
+                Jump();
 
             playerVelocity.y += gravity * Time.deltaTime;
             characterController.Move(playerVelocity * Time.deltaTime);

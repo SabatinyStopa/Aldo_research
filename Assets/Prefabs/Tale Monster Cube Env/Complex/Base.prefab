@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4866032710447135604}
   - component: {fileID: 1682617875102283918}
   - component: {fileID: 3328684339668357351}
-  - component: {fileID: 6649284630220595370}
+  - component: {fileID: 6234994321009121049}
   m_Layer: 8
   m_Name: Base
   m_TagString: Untagged
@@ -81,8 +81,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &6649284630220595370
-MeshCollider:
+--- !u!65 &6234994321009121049
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91,10 +91,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 44fcc8a852abb1343bd6165437060363, type: 2}
+  serializedVersion: 2
+  m_Size: {x: 1.002, y: 1.0020003, z: 1.0020003}
+  m_Center: {x: 0, y: -0.4, z: -0.00000014901161}
 --- !u!1001 &6350075297455075491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167,7 +166,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3396079315309132487, guid: 206ba921695287f41ba9e27245b7e049, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 206ba921695287f41ba9e27245b7e049, type: 3}
 --- !u!4 &2782337287473086227 stripped
 Transform:
