@@ -10,12 +10,12 @@ namespace PlatformGame.Player{
         [SerializeField] float jumpHeight;
         [Header("Rotação do Personagem")]
         [SerializeField] float turnSmoothTime = 0.1f;
-        [SerializeField] float turnSmoothVelocity;
         [Header("Checagem do chão")]
         [SerializeField] Transform groundChecker;
         [SerializeField] float groundCheckRadius = 0.2f;
         [SerializeField] LayerMask groundMask;
         CharacterController characterController;
+        float turnSmoothVelocity;
         Vector3 playerVelocity;
         bool isGrounded;
         PlayerAnimator playerAnimator;
