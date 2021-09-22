@@ -321,6 +321,10 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 318905509, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
+      propertyPath: groundCheckRadius
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 1147752367711628, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
       propertyPath: m_Name
       value: Player
@@ -368,6 +372,11 @@ PrefabInstance:
     - target: {fileID: 4268597916284530, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 143350241100547368, guid: 2abf19653d633114faedf3b60dc6c39f,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1674455799011208659, guid: 2abf19653d633114faedf3b60dc6c39f,
         type: 3}

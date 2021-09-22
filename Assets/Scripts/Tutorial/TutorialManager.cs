@@ -1,3 +1,4 @@
+using PlatformGame.Helper;
 using UnityEngine;
 using TMPro;
 
@@ -13,6 +14,7 @@ namespace PlatformGame.Tutorial{
         void Start(){
             counter = 0;
             text.text = tutorialQuotes[counter];
+            text.StartCoroutine(text.GetComponent<TextTypeEffect>().StartTyping());
             GameManager.instance.playerCantMove = true;
         }
 
@@ -20,8 +22,10 @@ namespace PlatformGame.Tutorial{
             counter++;
             if(counter >= tutorialQuotes.Length)
                 EndTutorial();
-            else
+            else{
                 text.text = tutorialQuotes[counter];
+                text.StartCoroutine(text.GetComponent<TextTypeEffect>().StartTyping());
+            }
         }
 
         void EndTutorial(){

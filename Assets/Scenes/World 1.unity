@@ -1350,6 +1350,7 @@ GameObject:
   - component: {fileID: 866311413}
   - component: {fileID: 866311412}
   - component: {fileID: 866311415}
+  - component: {fileID: 866311416}
   m_Layer: 5
   m_Name: Tutorial Text
   m_TagString: Untagged
@@ -1376,7 +1377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You are Aldo!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1486,9 +1487,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StringReference:
     m_TableReference:
-      m_TableCollectionName: GUID:c73093636bdd1bc4da4747fd3e313461
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 79164170043392
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -1510,6 +1511,19 @@ MonoBehaviour:
         m_CallState: 1
   references:
     version: 1
+--- !u!114 &866311416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866311411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a5c2c17f47c014baa351c2e04a27b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToWaitBetweenChars: 0.03
 --- !u!4 &993780619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7810677235358442658, guid: a8280c666b542d24db1234c252224ef8,
@@ -2696,21 +2710,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 881141283606376401}
-          m_MethodName: SetCanJump
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
@@ -2725,6 +2724,21 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 881141283606376401}
+          m_MethodName: SetCanJump
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!1 &1716051126
 GameObject:
@@ -4054,6 +4068,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1299993515}
     m_Modifications:
+    - target: {fileID: 10942837028132723, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258466280894251769, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517746630560020224, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731064061789689443, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125307537740627389, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153984446793036231, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183644751700338743, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924975490006299162, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754597815092155237, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6784275979970196514, guid: 72766c042718ca24cbe3340fdf6e4bc5,
         type: 3}
       propertyPath: m_RootOrder
@@ -4113,6 +4172,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground 9 grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960692181398845482, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007600021892520148, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8705210806318842565, guid: 72766c042718ca24cbe3340fdf6e4bc5,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72766c042718ca24cbe3340fdf6e4bc5, type: 3}
