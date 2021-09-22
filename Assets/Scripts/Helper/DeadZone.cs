@@ -15,7 +15,7 @@ namespace PlatformGame.Helper{
                 GameManager.instance.PlayerDied();    
         }
 
-        public void ResetPlayerPosition(){
+        void ResetPlayerPosition(){
             player.SetActive(false);
             player.transform.position = playerStartingPosition;
             player.SetActive(true);
