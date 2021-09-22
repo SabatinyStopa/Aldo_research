@@ -91,5 +91,9 @@ MonoBehaviour:
     m_Localized: Aproveite sua jornada!
     m_Metadata:
       m_Items: []
+  - m_Id: 80598647177216
+    m_Localized: "Aperte para avan\xE7ar"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

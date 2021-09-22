@@ -90,5 +90,9 @@ MonoBehaviour:
     m_Localized: Enjoy your journey!
     m_Metadata:
       m_Items: []
+  - m_Id: 80598647177216
+    m_Localized: Tap To Advance
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
