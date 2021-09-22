@@ -15,7 +15,7 @@ namespace PlatformGame{
         }
         public void TakeDamage(float amount){
             currentLife -= amount;
-            //Take hit animation
+
             if(currentLife <= 0)
                 Die();
 
@@ -30,7 +30,8 @@ namespace PlatformGame{
         }
 
         void Die(){
-            Debug.Log("Char died");
+            if(gameObject.CompareTag(Constants.PLAYER_TAG))
+                GameManager.instance.PlayerDied();
         }
     }
 }
