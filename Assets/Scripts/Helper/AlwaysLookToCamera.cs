@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PlatformGame{
+namespace PlatformGame.Helper{
     public class AlwaysLookToCamera : MonoBehaviour{
         Transform mainCameraTransform;
 
