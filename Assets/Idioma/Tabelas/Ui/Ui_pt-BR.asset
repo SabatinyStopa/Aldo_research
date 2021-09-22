@@ -54,5 +54,42 @@ MonoBehaviour:
     m_Localized: Sair
     m_Metadata:
       m_Items: []
+  - m_Id: 79164170043392
+    m_Localized: "Voc\xEA \xE9 Aldo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79212576505856
+    m_Localized: "E voc\xEA tem uma importante miss\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79258512523264
+    m_Localized: "Aldo \xE9 respons\xE1vel por coletar cristais neste planeta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79348044136448
+    m_Localized: Em especial um grande cristal para sua grande pesquisa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79531666571264
+    m_Localized: Encontre este grande cristal e traga-o de volta para a nave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79704291540992
+    m_Localized: Para mover use as setas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79746519793664
+    m_Localized: Pule usando a seta pra cima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79838786093056
+    m_Localized: "Para usar sua arma de plasma pressione o bot\xE3o do machado de
+      batalha"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79978485776384
+    m_Localized: Aproveite sua jornada!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

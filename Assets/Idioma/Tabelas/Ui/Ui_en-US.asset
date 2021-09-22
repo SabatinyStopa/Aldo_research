@@ -54,5 +54,41 @@ MonoBehaviour:
     m_Localized: Quit
     m_Metadata:
       m_Items: []
+  - m_Id: 79164170043392
+    m_Localized: You are Aldo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79212576505856
+    m_Localized: And you have an important mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79258512523264
+    m_Localized: Aldo is responsible to collect crystals on this planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79348044136448
+    m_Localized: In especial a big crystal for his big research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79531666571264
+    m_Localized: Find this big crystal and bring it back to the ship
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79704291540992
+    m_Localized: To move use the arrows
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79746519793664
+    m_Localized: Jump using the up arrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79838786093056
+    m_Localized: To use your plasma gun press the battle axe button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79978485776384
+    m_Localized: Enjoy your journey!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -3887,8 +3887,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialQuotes:
-  - Use the arrows to move
-  - Use arrow up to jump
-  - Press the battle axe to shoot
+  - You are Aldo!
+  - And you have an important mission
+  - Aldo is responsible to collect crystals on this planet
+  - In especial a big crystal for his big research
+  - Find this big Crystal and bring it back to the ship
+  - To move use the arrows
+  - Jump using the up arrow
+  - To use your plasma gun press the battle axe button
+  - Enjoy your journey!
   text: {fileID: 866311412}
   tutorialCanvas: {fileID: 198385316}
