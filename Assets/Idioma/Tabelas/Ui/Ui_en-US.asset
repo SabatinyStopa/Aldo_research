@@ -50,5 +50,9 @@ MonoBehaviour:
     m_Localized: Sound Effects
     m_Metadata:
       m_Items: []
+  - m_Id: 13238359818240
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
