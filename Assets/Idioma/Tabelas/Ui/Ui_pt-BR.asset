@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Ui_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: c73093636bdd1bc4da4747fd3e313461, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 55406493696
+    m_Localized: Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94442881024
+    m_Localized: "Op\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148255801344
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 243449724928
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 285090775040
+    m_Localized: Selecione o idioma
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
