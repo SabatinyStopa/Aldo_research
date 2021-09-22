@@ -35,6 +35,18 @@ MonoBehaviour:
     m_Key: Select the language
     m_Metadata:
       m_Items: []
+  - m_Id: 745709240320
+    m_Key: Developed by Sabatiny Stopa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5152802865152
+    m_Key: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5210902364160
+    m_Key: Sound Effects
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

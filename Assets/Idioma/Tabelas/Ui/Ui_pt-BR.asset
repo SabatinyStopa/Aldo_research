@@ -38,5 +38,17 @@ MonoBehaviour:
     m_Localized: Selecione o idioma
     m_Metadata:
       m_Items: []
+  - m_Id: 745709240320
+    m_Localized: Desenvolvido por Sabatiny Stopa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5152802865152
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5210902364160
+    m_Localized: Som de Efeitos
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

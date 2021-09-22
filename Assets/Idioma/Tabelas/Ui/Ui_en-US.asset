@@ -38,5 +38,17 @@ MonoBehaviour:
     m_Localized: Select the language
     m_Metadata:
       m_Items: []
+  - m_Id: 745709240320
+    m_Localized: Developed by Sabatiny Stopa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5152802865152
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5210902364160
+    m_Localized: Sound Effects
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
