@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace PlatformGame{
+namespace PlatformGame.Quest{
     public class QuestManager : MonoBehaviour {
         
     }
