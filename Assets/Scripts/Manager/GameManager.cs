@@ -6,6 +6,8 @@ namespace PlatformGame{
         [HideInInspector] public float timeInScene;
         [HideInInspector] public bool hasMainCollectable;
         [HideInInspector] public bool playerCantMove;
+        public delegate void OnDeathHandler();
+        public OnDeathHandler onDeath;
 
         void Awake(){
             if(!instance)
@@ -20,7 +22,9 @@ namespace PlatformGame{
         void Update(){
             SetCurrentTime();
         }
-
+        public void PlayerDied(){
+            onDeath?.Invoke();
+        }
         void SetCurrentTime(){
             timeInScene += Time.deltaTime;
         }
