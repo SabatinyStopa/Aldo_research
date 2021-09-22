@@ -7,9 +7,26 @@ namespace PlatformGame.Tutorial{
         [SerializeField] string[] tutorialQuotes;
         [Header("Texto")]
         [SerializeField] TextMeshProUGUI text;
+        [Header("Canvas do tutorial")]
+        [SerializeField] GameObject tutorialCanvas;
+        int counter;
+        void Start(){
+            counter = 0;
+            text.text = tutorialQuotes[counter];
+            GameManager.instance.playerCantMove = true;
+        }
 
-        public void SetTextByIndex(){
+        public void AdvanceTutorial(){
+            counter++;
+            if(counter >= tutorialQuotes.Length)
+                EndTutorial();
+            else
+                text.text = tutorialQuotes[counter];
+        }
 
+        void EndTutorial(){
+            tutorialCanvas.SetActive(false);
+            GameManager.instance.playerCantMove = false;
         }
     }
 }
